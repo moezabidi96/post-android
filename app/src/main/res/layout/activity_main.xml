@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="30dp"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:id="@+id/signup_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:text="welcome User \n login to your account"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textAlignment="center"
+
+        android:transitionName="transition_title_text"
+        android:gravity="center_horizontal" />
+
+
+
+
+    <EditText
+        android:layout_marginTop="100dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:background="@drawable/custom_input"
+            android:inputType="textEmailAddress"
+
+            android:hint="Email"
+
+            android:drawableLeft="@drawable/ic_baseline_email_24" />
+        <EditText
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+             android:background="@drawable/custom_input"
+            android:inputType="textEmailAddress"
+            android:hint="Password"
+
+            android:drawableLeft="@drawable/ic_lock" />
+
+        <Button
+            android:id="@+id/btSignin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+          android:backgroundTint="@color/black"
+
+            android:text="login" />
+    <Button
+        android:id="@+id/btsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:elevation="5dp"
+
+
+        android:text="create new account"
+        android:textColor="@color/black"
+        />
+
+
+
+</LinearLayout>
+</ScrollView>
